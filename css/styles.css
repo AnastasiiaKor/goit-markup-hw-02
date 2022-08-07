@@ -1,0 +1,68 @@
+/* основной цвет бэка #F5F5F5 */
+/* #FFFFFF цвет бэка хедера  */
+/* цвет бэка футера #2F303A */
+/* наша команда #F5F4FA */
+/* цвет заголовков #212121 */
+/* увет текста #757575 */
+/*  акцент #2196F3 */
+/* roboto 400 700 */
+
+:root {
+  --main-background-color: #f5f5f5;
+  --header-background-color: #ffffff;
+  --footer-backgroung-color: #2f303a;
+  --main-color: #757575;
+  --title-color: #212121;
+  --accent-color: #2196f3;
+}
+/* basic styles */
+body {
+  background-color: var(--main-background-color);
+  color: var(--main-color);
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: inherit;
+}
+
+/* header styles */
+header {
+  background-color: #ffffff;
+}
+.logo {
+  color: #000;
+}
+.logo-start {
+  color: var(--accent-color);
+}
+.site-nav .link {
+  color: var(--title-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.contacts-nav .link {
+  color: inherit;
+}
+.contacts-nav .link:hover,
+.contacts-nav .link:focus {
+  color: var(--accent-color);
+}
+/* main styles */
+.title,
+.subtitle {
+  color: var(--title-color);
+}
+/* footer styles */
+.footer {
+  background-color: var(--footer-backgroung-color);
+}
+.logo-end {
+  color: var(--header-background-color);
+}
+.link .map {
+  color: var(--header-background-color);
+}
