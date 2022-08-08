@@ -19,6 +19,7 @@
 body {
   background-color: var(--main-background-color);
   color: var(--main-color);
+  font-family: Roboto, sans-serif;
 }
 .list {
   list-style: none;
@@ -54,7 +55,17 @@ header {
 .site-nav .current {
   color: var(--accent-color);
 }
+.logo {
+  font-family: Raleway, sans-serif;
+}
 /* main styles */
+.hero {
+  background-color: var(--footer-backgroung-color);
+}
+.hero-title {
+  color: var(--header-background-color);
+}
+
 .title,
 .subtitle {
   color: var(--title-color);
@@ -75,6 +86,10 @@ header {
 .button,
 .hero-button {
   cursor: pointer;
+}
+.list .example {
+  text-decoration: inherit;
+  color: inherit;
 }
 /* footer styles */
 .footer {
