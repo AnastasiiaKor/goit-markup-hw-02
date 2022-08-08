@@ -51,10 +51,30 @@ header {
 .contacts-nav .link:focus {
   color: var(--accent-color);
 }
+.site-nav .current {
+  color: var(--accent-color);
+}
 /* main styles */
 .title,
 .subtitle {
   color: var(--title-color);
+}
+.hero-button {
+  color: var(--header-background-color);
+  background-color: var(--accent-color);
+}
+.button {
+  color: var(--title-color);
+  background-color: #f5f4fa;
+}
+.button:hover,
+.button:focus {
+  color: var(--header-background-color);
+  background-color: var(--accent-color);
+}
+.button,
+.hero-button {
+  cursor: pointer;
 }
 /* footer styles */
 .footer {
@@ -65,4 +85,19 @@ header {
 }
 .link .map {
   color: var(--header-background-color);
+}
+.address-nav > .list {
+  font-style: normal;
+}
+.map {
+  color: var(--header-background-color);
+}
+.contact {
+  color: rgba(255, 255, 255, 0.6);
+}
+.map:hover,
+.contact:hover,
+.map:focus,
+.contact:focus {
+  color: var(--accent-color);
 }
