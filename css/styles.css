@@ -8,8 +8,7 @@
 /* roboto 400 700 */
 
 :root {
-  --main-background-color: #f5f5f5;
-  --header-background-color: #ffffff;
+  --main-background-color: #ffffff;
   --footer-backgroung-color: #2f303a;
   --main-color: #757575;
   --title-color: #212121;
@@ -75,7 +74,7 @@ header {
   background-color: var(--footer-backgroung-color);
 }
 .hero-title {
-  color: var(--header-background-color);
+  color: var(--main-background-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -88,12 +87,16 @@ header {
   color: var(--title-color);
 }
 .hero-button {
-  color: var(--header-background-color);
+  color: var(--main-background-color);
   background-color: var(--accent-color);
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #188ce8;
 }
 .button {
   color: var(--title-color);
@@ -101,7 +104,7 @@ header {
 }
 .button:hover,
 .button:focus {
-  color: var(--header-background-color);
+  color: var(--main-background-color);
   background-color: var(--accent-color);
 }
 .button,
@@ -112,13 +115,12 @@ header {
   text-decoration: inherit;
   color: inherit;
 }
-.work-example .title,
+.work-example .subtitle,
 .hero-title,
 .hero-button {
   letter-spacing: 0.06em;
 }
-.specialization .title,
-.team .title {
+.title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -130,9 +132,14 @@ header {
 }
 .advantages .text {
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+}
+.team {
+  background-color: #f5f4fa;
+}
+.team .card {
+  background-color: var(--main-background-color);
 }
 .team .subtitle {
   font-weight: 500;
@@ -140,21 +147,22 @@ header {
   line-height: 1.19;
 }
 .team .position {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
 }
-.sorter {
+
+.sorter .button {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
+  letter-spacing: inherit;
 }
-.work-example .title {
+.work-example .subtitle {
   font-size: 18px;
   line-height: 2;
 }
 .work-example .text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
 }
@@ -163,16 +171,16 @@ header {
   background-color: var(--footer-backgroung-color);
 }
 .logo-end {
-  color: var(--header-background-color);
+  color: var(--main-background-color);
 }
 .link .map {
-  color: var(--header-background-color);
+  color: var(--main-background-color);
 }
 .address-nav > .list {
   font-style: normal;
 }
 .map {
-  color: var(--header-background-color);
+  color: var(--main-background-color);
 }
 .contact {
   color: rgba(255, 255, 255, 0.6);
@@ -185,7 +193,6 @@ header {
 }
 .map,
 .contact {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 }
